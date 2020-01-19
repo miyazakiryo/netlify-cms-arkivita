@@ -9,3 +9,5 @@ tags:
   - sample
 ---
 This is entry body.
+
+![lily](/img/sample.jpg)
