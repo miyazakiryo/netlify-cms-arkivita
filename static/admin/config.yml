@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  # 参照するブランチを指定
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -8,8 +9,10 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
+# 指定したディレクトリに画像を格納
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
